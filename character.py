@@ -1,4 +1,4 @@
-class Characters:
+class Character:
     def __init__(self, name:str , health:int, damage:int):
         self.name = name
         self.health = health
