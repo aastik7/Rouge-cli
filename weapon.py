@@ -15,4 +15,7 @@ iron_sword = Weapon(name="Iron Sword",
                     damage = 5,
                     value = 10)
 
-short_bow = Weapon(n)
+short_bow = Weapon(name= "Short Bow",
+            weapon_type="blunt",
+            damage=2,
+            value = 0)
