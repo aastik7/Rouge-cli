@@ -20,7 +20,7 @@ short_bow = Weapon(name= "Short Bow",
             damage=2,
             value = 0)
 
-fists = Weapon(name"Fists,
+fists = Weapon(name="Fists",
                weapon_type="blunt",
                damage=2,
                value=0)
