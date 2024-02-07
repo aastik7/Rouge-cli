@@ -19,3 +19,10 @@ class Hero(Character):
     def __int__(self, name:str, health:str ) ->None:
         super().__init__(name=name, health=health)
     
+    def equip(self, weapon) -> None:
+        self.weapon = weapon
+        print(f"{self.name} equipped a(n) {self.weapon.name}!")
+
+    def drop(self) -> None:
+        print(f"{self.name} dropped the {self.weapon.name}!")
+        self.weapon = self.default_weapon
