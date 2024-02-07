@@ -26,3 +26,14 @@ class Hero(Character):
     def drop(self) -> None:
         print(f"{self.name} dropped the {self.weapon.name}!")
         self.weapon = self.default_weapon
+
+class Enemy(Character):
+    def __init__(self,
+                 name: str,
+                 health: int,
+                 weapon,
+                 ) -> None:
+        super().__init__(name=name, health=health)
+        self.weapon = weapon
+
+        self.health_bar = HealthBar(self, color="red")
