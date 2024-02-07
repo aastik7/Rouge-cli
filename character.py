@@ -9,5 +9,13 @@ class Character:
         self.damage = damage
 
     def attack(self, target) -> None:
-        target.hp -= self.damage
-        target.hp = max(target.hp, 0) 
+        target.health -= self.weapon.damage
+        target.health = max(target.health, 0)
+        target.health_bar.update()
+        print(f"{self.name} dealt {self.weapon.damage} damage to "
+              f"{target.name} with {self.weapon.name}") 
+
+class Hero(Character):
+    def __int__(self, name:str, health:str ) ->None:
+        super().__init__(name=name, health=health)
+    
