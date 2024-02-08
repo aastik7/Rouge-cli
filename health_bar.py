@@ -25,7 +25,10 @@ class HealthBar:
         self.entity = entity
         self.length = length
         self.max_value = entity.health_max
-        self.current_value = entity.health
+        self.currenst_value = entity.health
 
         self.is_colored = is_colored
         self.color = self.colors.get(color) or self.colors["default"]
+    
+    def update(self) -> None:
+        self.current_value = self.entity.health
