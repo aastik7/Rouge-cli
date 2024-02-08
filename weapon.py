@@ -1,5 +1,5 @@
 class Weapon:
-    def __init__(self, name: str, weapon_type: str, damage : str , value : int) -> None:
+    def __init__(self, name: str, weapon_type: str, damage : int , value : int) -> None:
         self.name = name
         self.weapon_type = weapon_type
         self.damage = damage 
