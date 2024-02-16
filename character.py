@@ -1,5 +1,5 @@
 from weapon import fists
-
+from health_bar import HealthBar
 
 
 class Character:
