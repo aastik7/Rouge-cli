@@ -16,9 +16,15 @@ class Character:
               f"{target.name} with {self.weapon.name}") 
 
 class Hero(Character):
-    def __int__(self, name:str, health:str ) ->None:
+    def __init__(self,
+                 name: str,
+                 health: int
+                 ) -> None:
         super().__init__(name=name, health=health)
-    
+
+        self.default_weapon = self.weapon
+        self.health_bar = HealthBar(self, color="green")
+
     def equip(self, weapon) -> None:
         self.weapon = weapon
         print(f"{self.name} equipped a(n) {self.weapon.name}!")
